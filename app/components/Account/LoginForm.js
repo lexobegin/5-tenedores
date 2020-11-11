@@ -89,7 +89,7 @@ function defaultFormValue() {
     return {
         email: "",
         password: ""
-    }
+    };
 }
 
 const styles = StyleSheet.create({
@@ -113,4 +113,4 @@ const styles = StyleSheet.create({
     iconRight: {
         color: "#c1c1c1",
     },
-})
+});

@@ -17,7 +17,7 @@ export default function Modal(props) {
         >
             {children}
         </Overlay>
-    )
+    );
 
 }
 

@@ -60,7 +60,7 @@ export default function ChangeDisplayNameForm(props) {
             loading={isLoading}
            />
         </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({
@@ -78,5 +78,5 @@ const styles = StyleSheet.create({
     },
     btn: {
         backgroundColor: "#00a680",
-    }
+    },
 });

@@ -15,8 +15,8 @@ export default function ChangeEmailForm(props) {
     //console.log(formData);
 
     const onChange = (e, type) => {
-        setFormData({...formData, [type]: e.nativeEvent.text})
-    }
+        setFormData({ ...formData, [type]: e.nativeEvent.text});
+    };
 
     const onSubmit = () => {
         //console.log("Formulario enviado...");
@@ -40,7 +40,8 @@ export default function ChangeEmailForm(props) {
             reauthenticate(formData.password)
             .then(() => {
                 //console.log(response);
-                firebase.auth()
+                firebase
+                    .auth()
                     .currentUser.updateEmail(formData.email)
                     .then(() => {
                         setIsLoading(false);
@@ -83,7 +84,7 @@ export default function ChangeEmailForm(props) {
                     type: "material-community",
                     name: showPassword ? "eye-off-outline" : "eye-outline",
                     color: "#c2c2c2",
-                    onPress: () => setShowPassword(!showPassword)
+                    onPress: () => setShowPassword(!showPassword),
                 }}
                 onChange={(e) => onChange(e, "password")}
                 errorMessage={errors.password}
@@ -102,8 +103,8 @@ export default function ChangeEmailForm(props) {
 function defaultValue() {
     return {
         email: "",
-        password: ""
-    }
+        password: "",
+    };
 }
 
 const styles = StyleSheet.create({

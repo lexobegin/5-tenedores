@@ -52,7 +52,7 @@ export default function Navigation() {
                 />
             </Tab.Navigator>
         </NavigationContainer>
-    )
+    );
 }
 
 function screenOptions (route, color) {
