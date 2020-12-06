@@ -15,6 +15,10 @@ export default function LoginForm(props) {
     const [loading, setLoading] = useState(false);
     const navigation = useNavigation();
 
+    //firebase.auth().onAuthStateChanged((user) => {//=>Una solucion de muchas
+    //    user && navigation.navigate("account");
+    //});
+
     const onChange = (e, type) => {
         //console.log(e.nativeEvent.text);
         //console.log(type);
@@ -37,6 +41,7 @@ export default function LoginForm(props) {
                 //console.log("OK");
                 setLoading(false);
                 navigation.navigate("account");
+                //navigation.goBack();//=>Una solucion de muchas
             })
             .catch(() => {
                 setLoading(false);

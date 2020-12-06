@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "sdkVersion": "39.0.0",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -27,7 +28,13 @@
         "LOCATION",
         "ACCESS_COARSE_LOCATION",
         "ACCESS_FINE_LOCATION"
-      ]
+      ],
+      "package": "host.exp.lexo",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCbnMDtoWs2MsCjWNsdlntI3bf4CPW9QNY"
+        }
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"

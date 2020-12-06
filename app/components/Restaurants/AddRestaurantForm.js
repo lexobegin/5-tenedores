@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { StyleSheet, View, ScrollView, Alert, Dimensions } from "react-native";
 import { Icon, Avatar, Image, Input, Button } from "react-native-elements";
-import { map, size, filter, result } from "lodash";
+import { map, size, filter } from "lodash";
 import * as Permissions from "expo-permissions";
 import * as ImagePicker from "expo-image-picker";
 import * as Location from "expo-location";
@@ -284,7 +284,7 @@ function UploadImage(props) {
                 toastRef.current.show(
                     "Has cerrado la galeria sin seleccionar ninguna imagen",
                     2000
-                )
+                );
             } else {
                 //console.log("OK");
                 //console.log(result.uri);
@@ -341,7 +341,7 @@ function UploadImage(props) {
                 ))}
             </ScrollView>
         </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({
