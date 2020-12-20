@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "sdkVersion": "39.0.0",
+    "sdkVersion": "40.0.0",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -21,6 +21,12 @@
       "supportsTablet": false
     },
     "android": {
+      "package": "com.host.exp.lexo",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyA1NGXG4d9wnS2RnJ5cJH8OZIexIfZOukM"
+        }
+      },
       "permissions": [
         "CAMERA_ROLL",
         "READ_EXTERNAL_STORAGE",
@@ -28,13 +34,7 @@
         "LOCATION",
         "ACCESS_COARSE_LOCATION",
         "ACCESS_FINE_LOCATION"
-      ],
-      "package": "host.exp.lexo",
-      "config": {
-        "googleMaps": {
-          "apiKey": "AIzaSyCbnMDtoWs2MsCjWNsdlntI3bf4CPW9QNY"
-        }
-      }
+      ]      
     },
     "web": {
       "favicon": "./assets/favicon.png"
